@@ -4,6 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Appointment - CarePlus Hospital</title>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 </head>
 
@@ -22,82 +23,221 @@
     <header class="navbar">
 
         <div class="logo">
+
             <i class="fa-solid fa-heart-pulse"></i>
+
             CarePlus
+
         </div>
 
+        <!-- MOBILE MENU BUTTON -->
+
         <button class="menu-toggle" id="menuToggle">
+
             <i class="fa-solid fa-bars"></i>
+
         </button>
 
         <nav class="nav-container" id="navContainer">
 
             <ul class="nav-links">
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="doctors.html">Doctors</a></li>
-                <li><a href="appointment.html" class="active">Appointment</a></li>
+                <li>
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="doctors.html">
+
+                        Doctors
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="appointment.html" class="active">
+
+                        Appointment
+
+                    </a>
+                </li>
 
             </ul>
 
-            <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+            <!-- DARK MODE BUTTON -->
+
+            <button id="themeToggle" class="theme-btn">
+
+                🌙 Dark
+
+            </button>
 
         </nav>
 
     </header>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
 
-    <section class="hero">
+    <section class="hero appointment-hero">
 
         <div class="hero-content">
 
-            <h1>Book Appointment</h1>
+            <h1>
 
-            <p>Schedule your visit with our doctors easily</p>
+                Book Appointment
+
+            </h1>
+
+            <p>
+
+                Schedule your visit with our doctors easily
+
+            </p>
 
         </div>
 
     </section>
 
-    <!-- FORM -->
+    <!-- APPOINTMENT SECTION -->
 
     <section class="contact-section">
 
-        <div class="contact-container">
+        <div class="appointment-wrapper">
+
+            <!-- LEFT IMAGE -->
+
+            <div class="appointment-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop"
+                alt="Appointment">
+
+            </div>
+
+            <!-- RIGHT FORM -->
 
             <div class="booking-form">
 
-                <h2>Appointment Form</h2>
+                <h2>
+
+                    Book Appointment
+
+                </h2>
 
                 <form>
 
-                    <div class="input-group">
-                        <input type="text" placeholder="Full Name">
-                    </div>
+                    <!-- FULL NAME -->
 
                     <div class="input-group">
-                        <input type="email" placeholder="Email">
+
+                        <input
+                        type="text"
+                        placeholder="Full Name"
+                        required>
+
                     </div>
 
-                    <div class="input-group">
-                        <input type="date">
-                    </div>
+                    <!-- EMAIL -->
 
                     <div class="input-group">
-                        <select>
-                            <option>Select Department</option>
-                            <option>Cardiology</option>
-                            <option>Neurology</option>
-                            <option>Pediatrics</option>
+
+                        <input
+                        type="email"
+                        placeholder="Email Address"
+                        required>
+
+                    </div>
+
+                    <!-- PHONE -->
+
+                    <div class="input-group">
+
+                        <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        required>
+
+                    </div>
+
+                    <!-- DATE -->
+
+                    <div class="input-group">
+
+                        <input
+                        type="date"
+                        required>
+
+                    </div>
+
+                    <!-- DEPARTMENT -->
+
+                    <div class="input-group">
+
+                        <select required>
+
+                            <option value="">
+
+                                Select Department
+
+                            </option>
+
+                            <option>
+
+                                Cardiology
+
+                            </option>
+
+                            <option>
+
+                                Neurology
+
+                            </option>
+
+                            <option>
+
+                                Pediatrics
+
+                            </option>
+
+                            <option>
+
+                                Orthopedic
+
+                            </option>
+
+                            <option>
+
+                                Dermatology
+
+                            </option>
+
                         </select>
+
                     </div>
+
+                    <!-- MESSAGE -->
 
                     <div class="input-group">
-                        <textarea placeholder="Message"></textarea>
+
+                        <textarea
+                        placeholder="Write Your Message"
+                        required></textarea>
+
                     </div>
 
-                    <button class="submit-btn">Book Now</button>
+                    <!-- BUTTON -->
+
+                    <button
+                    type="submit"
+                    class="submit-btn">
+
+                        Book Now
+
+                    </button>
 
                 </form>
 
@@ -107,55 +247,97 @@
 
     </section>
 
-   <!-- FOOTER -->
+    <!-- FOOTER -->
 
     <footer class="main-footer">
 
         <div class="footer-grid">
 
+            <!-- ABOUT -->
+
             <div>
 
-                <h3>CarePlus Hospital</h3>
+                <h3>
+
+                    CarePlus Hospital
+
+                </h3>
 
                 <p>
+
                     Advanced healthcare with trusted doctors and modern treatment.
+
                 </p>
 
             </div>
 
+            <!-- QUICK LINKS -->
+
             <div>
 
-                <h4>Quick Links</h4>
+                <h4>
+
+                    Quick Links
+
+                </h4>
 
                 <ul>
 
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">
+
+                            Home
+
+                        </a>
                     </li>
 
                     <li>
-                        <a href="doctors.html">Doctors</a>
+                        <a href="doctors.html">
+
+                            Doctors
+
+                        </a>
                     </li>
 
                     <li>
-                        <a href="appointment.html">Appointment</a>
+                        <a href="appointment.html">
+
+                            Appointment
+
+                        </a>
                     </li>
 
                 </ul>
 
             </div>
 
+            <!-- CONTACT -->
+
             <div>
 
-                <h4>Contact</h4>
+                <h4>
 
-                <p>Email: support@careplus.com</p>
+                    Contact
 
-                <p>Phone: +91 98765 43210</p>
+                </h4>
+
+                <p>
+
+                    Email: support@careplus.com
+
+                </p>
+
+                <p>
+
+                    Phone: +91 98765 43210
+
+                </p>
 
             </div>
 
         </div>
+
+        <!-- COPYRIGHT -->
 
         <div class="footer-bottom">
 
@@ -168,7 +350,8 @@
         </div>
 
     </footer>
-     <!-- JS -->
+
+    <!-- JS FILE -->
 
     <script src="js/script.js"></script>
 

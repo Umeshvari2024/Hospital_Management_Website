@@ -29,3 +29,12 @@ menuToggle.addEventListener("click",()=>{
     navContainer.classList.toggle("show");
 
 });
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("Appointment Booked Successfully!");
+
+});
