@@ -31,10 +31,14 @@ menuToggle.addEventListener("click",()=>{
 });
 const form = document.querySelector("form");
 
-form.addEventListener("submit", function(e){
+if(form){
 
-    e.preventDefault();
+    form.addEventListener("submit", function(e){
 
-    alert("Appointment Booked Successfully!");
+        e.preventDefault();
 
-});
+        alert("Appointment Booked Successfully!");
+
+    });
+
+}
