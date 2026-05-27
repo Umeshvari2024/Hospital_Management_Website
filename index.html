@@ -21,6 +21,18 @@
 </head>
 
 <body>
+     <!-- LOGIN CHECK -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const user = localStorage.getItem("CarePlus_User");
+
+            if (!user) {
+                window.location.href = "login.html";
+            }
+
+        });
+    </script>
 
     <!-- NAVBAR -->
 
@@ -57,7 +69,10 @@
                 <li>
                     <a href="appointment.html">Appointment</a>
                 </li>
-
+                <li>
+                    <a href="#" id="logoutBtn">Logout</a>
+                </li>
+                
             </ul>
 
             <!-- DARK MODE -->
@@ -316,7 +331,28 @@
 
     </footer>
 
-    <!-- JS -->
+     <!-- LOGOUT SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const logoutBtn = document.getElementById("logoutBtn");
+
+            if (logoutBtn) {
+
+                logoutBtn.addEventListener("click", (e) => {
+
+                    e.preventDefault();
+
+                    localStorage.removeItem("CarePlus_User");
+
+                    window.location.href = "login.html";
+
+                });
+
+            }
+
+        });
+    </script>
 
     <script src="js/script.js"></script>
 
